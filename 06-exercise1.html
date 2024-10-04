@@ -1,0 +1,22 @@
+<script>
+
+    let totalPrice = 0
+    let totalPriceTax = 0
+    const shoppingCart = [1.50, 2.00, 3.75, 0.59, 4.99]
+
+    shoppingCart.forEach( (value) => {
+        totalPrice += value
+    })
+
+    const priceWithTax = shoppingCart.map ( item => {
+        return(item * 1.21)
+    })
+
+    priceWithTax.forEach( (value) => {
+        totalPriceTax += value
+    })
+
+    console.log(`The total price is: ${totalPrice}`)
+    console.log(`The total price with tax is: ${totalPriceTax}`)
+
+</script>
