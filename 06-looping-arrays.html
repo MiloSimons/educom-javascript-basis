@@ -1,0 +1,15 @@
+<script>
+
+    let txt = ""
+    const beatles = ["John", "Paul", "George", "Ringo"]
+
+    const inloop = (value, index, array) => {
+        txt += value.toUpperCase()
+    }
+    
+    beatles.forEach(inLoop)
+    console.log(txt)
+
+    beatles.forEach( (value, index, array) => {txt += `${ value.toUpperCase()} -`} )
+
+</script>
